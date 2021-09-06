@@ -1,19 +1,22 @@
 module.exports = {
-  testEnvironment: 'jsdom',
+  preset: 'ts-jest',
   roots: ['<rootDir>/src'],
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
+  moduleNameMapper: {
+    // CSS モックをモックする設定
+    '\\.(css|scss)$': 'identity-obj-proxy',
+    // pages と components ディレクトリのエイリアスを設定（必要であれば他のディレクトリも追加）
+    '^(pages|components|lib)/(.+)': '<rootDir>/src/$1/$2',
   },
-  // see https://github.com/zeit/next.js/issues/8663
+  transform: {
+    "^.+\\.(js|ts|tsx)$": "ts-jest",
+    // "^.+\\.svg$": "jest-svg-transformer"
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.jest.json',
+      tsconfig: {
+        jsx: 'react-jsx',
+      },
     },
   },
-  // see https://stackoverflow.com/questions/50863312/jest-gives-cannot-find-module-when-importing-components-with-absolute-paths
-  moduleDirectories: ['node_modules', '<rootDir>'],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '<rootDir>/src/__tests__/utils',
-  ],
 }
