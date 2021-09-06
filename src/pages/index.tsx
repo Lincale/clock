@@ -1,14 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+ import { Box, chakra } from '@chakra-ui/react'
+ import React from 'react'
 
-const Home: NextPage = () => {
+ export default function HomePage() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Box>
+      <chakra.h1 color="tomato">Hello World!</chakra.h1>
+    </Box>
   )
 }
-
-export default Home
