@@ -4,7 +4,7 @@
  export default function HomePage() {
   return (
     <Box>
-      <chakra.h1 color="tomato">Hello World!</chakra.h1>
+      <chakra.h1 color="tomato">Hello Jest!</chakra.h1>
     </Box>
   )
 }
