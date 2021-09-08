@@ -21,6 +21,7 @@
     "firebase": "9.0.0",
     "firebase-admin": "^9.11.1",
     "framer-motion": "4.1.17",
+    "magic-sdk": "^5.1.0",
     "next": "11.1.2",
     "nookies": "^2.5.2",
     "react": "17.0.2",
