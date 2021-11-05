@@ -20,7 +20,7 @@
     "@emotion/styled": "11.3.0",
     "firebase": "9.0.0",
     "firebase-admin": "^9.11.1",
-    "framer-motion": "4.1.17",
+    "framer-motion": "5.2.1",
     "magic-sdk": "^5.1.0",
     "next": "11.1.2",
     "nookies": "^2.5.2",
