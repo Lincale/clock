@@ -19,7 +19,7 @@
     "@emotion/react": "11.5.0",
     "@emotion/styled": "11.3.0",
     "firebase": "9.3.0",
-    "firebase-admin": "^9.11.1",
+    "firebase-admin": "10.0.0",
     "framer-motion": "4.1.17",
     "magic-sdk": "5.1.0",
     "next": "11.1.2",
