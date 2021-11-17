@@ -14,10 +14,10 @@
     "hygen": "hygen"
   },
   "dependencies": {
+    "@emotion/react": "11.6.0",
+    "@emotion/styled": "11.6.0",
     "@chakra-ui/icons": "1.1.1",
     "@chakra-ui/react": "1.7.1",
-    "@emotion/react": "11.4.1",
-    "@emotion/styled": "11.3.0",
     "firebase": "9.4.1",
     "firebase-admin": "10.0.0",
     "framer-motion": "5.3.0",
