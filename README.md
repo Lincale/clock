@@ -31,3 +31,5 @@
   - eslint
 
   - prettier
+
+　- jest
