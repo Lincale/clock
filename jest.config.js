@@ -8,7 +8,7 @@ module.exports = {
     '^(pages|components|lib)/(.+)': '<rootDir>/src/$1/$2',
   },
   transform: {
-    "^.+\\.(js|ts|tsx)$": "ts-jest",
+    '^.+\\.(js|ts|tsx)$': 'ts-jest',
     // "^.+\\.svg$": "jest-svg-transformer"
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
@@ -19,4 +19,4 @@ module.exports = {
       },
     },
   },
-}
+};

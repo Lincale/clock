@@ -1,5 +1,5 @@
-import Home from '../pages/index'
+import Home from '../pages/index';
 
-it("Homeコンポーネントが存在している", () => {
-	expect(Home).toBeTruthy()
-})
+it('Homeコンポーネントが存在している', () => {
+  expect(Home).toBeTruthy();
+});

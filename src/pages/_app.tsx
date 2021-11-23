@@ -1,13 +1,20 @@
-import type { AppProps } from "next/app"
-import { VFC } from "react"
-import { ChakraProvider } from "@chakra-ui/react"
+import type { AppProps } from 'next/app';
+import dayjs from 'dayjs';
+import timezone from 'dayjs/plugin/timezone';
+import utc from 'dayjs/plugin/utc';
+import { ThemeProvider } from '@mui/system';
+import { generalTheme } from 'src/styles/theme';
 
-const MyApp: VFC<AppProps> = ({ Component, pageProps }) => {
-	return (
-		<ChakraProvider>
-			<Component {...pageProps} />
-		</ChakraProvider>
-	)
-}
+dayjs.extend(timezone);
+dayjs.extend(utc);
+dayjs.tz.setDefault('Asia/Tokyo');
 
-export default MyApp
+const MyApp: React.VFC<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <ThemeProvider theme={generalTheme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+};
+
+export default MyApp;

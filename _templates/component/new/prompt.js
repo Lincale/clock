@@ -1,8 +1,8 @@
 const inputValidator = (input) => {
   if (input !== '') {
-    return true
+    return true;
   }
-}
+};
 
 module.exports = [
   {
@@ -25,4 +25,4 @@ module.exports = [
     enabled: 'はい',
     initial: true,
   },
-]
+];
