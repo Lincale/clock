@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import React, { useEffect, useState } from 'react';
 
@@ -17,16 +17,5 @@ export const RealTimeClock: React.FC<RealTimeClockProps> = ({ ...props }) => {
     return () => clearInterval(timer);
   });
 
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        fontSize: 32,
-        justifyContent: 'center',
-        mt: '20rem',
-      }}
-    >
-      {clock}
-    </Box>
-  );
+  return <Typography variant={'h4'}>{clock}</Typography>;
 };

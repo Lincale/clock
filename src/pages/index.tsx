@@ -1,9 +1,10 @@
-import dayjs from 'dayjs';
+import { Stack, Divider } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { RealTimeClock } from 'src/components/clock/RealTimeClock';
 import { Header } from 'src/components/common/Header';
+import { RandomUser } from 'src/components/user/RandomUser';
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,17 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header size='large' />
-      <RealTimeClock />
+      <Stack
+        mt='2rem'
+        direction='column'
+        justifyContent='space-evenly'
+        alignItems='center'
+        divider={<Divider orientation='horizontal' flexItem />}
+        spacing={5}
+      >
+        <RealTimeClock />
+        <RandomUser />
+      </Stack>
     </>
   );
 };

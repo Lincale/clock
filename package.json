@@ -1,5 +1,5 @@
 {
-  "name": "jitaku",
+  "name": "utility",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -27,6 +27,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.20.2",
+    "swr": "^1.0.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "babel-loader": "8.2.3",
     "babel-plugin-polyfill-corejs2": "^0.3.0",
     "babel-plugin-polyfill-regenerator": "^0.3.0",
+    "better-typescript-lib": "^2.0.0",
     "eslint": "<8.0.0",
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
