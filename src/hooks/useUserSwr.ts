@@ -1,8 +1,10 @@
 import { fetcher } from 'src/settings/fetcher';
 import { initialUsers } from 'src/types/User';
+import { useSWRConfig } from 'swr';
 import useSWRImmutable from 'swr/immutable';
 export const useUserSwr = () => {
-  const { data, error, mutate } = useSWRImmutable(
+  const { mutate } = useSWRConfig();
+  const { data, error } = useSWRImmutable(
     `https://randomuser.me/api`,
     fetcher,
     {
@@ -10,9 +12,11 @@ export const useUserSwr = () => {
     }
   );
 
+  const onClick = () => mutate(`https://randomuser.me/api`);
+
   return {
     data,
-    mutate,
+    onClick,
     isLoading: !error && !data,
     isError: error,
   };
