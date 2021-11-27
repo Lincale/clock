@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         divider={<Divider orientation='horizontal' flexItem />}
         spacing={5}
       >
-        <RealTimeClock />
+        <RealTimeClock mx={'10px'} />
         <RandomUser />
       </Stack>
     </Box>

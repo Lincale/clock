@@ -1,26 +1,33 @@
 import { Box, Typography } from '@mui/material';
-import dayjs from 'dayjs';
 import React, { useEffect, useState } from 'react';
+import { useClock } from 'src/hooks/useClock';
 import { FlexibleBox } from '../common/FlexibleBox';
+import { LocaleForm } from './LocaleForm';
 
-export type RealTimeClockProps = {};
+export type RealTimeClockProps = { mx: string };
 
-const RealTimeClock: React.FC<RealTimeClockProps> = () => {
-  const [clock, setClock] = useState(
-    dayjs().tz().format('YYYY-MM-DDTHH:mm:ss')
-  );
+const RealTimeClock: React.FC<RealTimeClockProps> = ({ ...props }) => {
+  const [locale, setLocale] = useState('Asia/Tokyo');
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setClock(dayjs().tz().format('YYYY-MM-DDTHH:mm:ss'));
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [clock]);
+  const clock = useClock({ tz: locale });
 
   return (
     <FlexibleBox>
-      <Typography variant={'h5'}>現在の時刻は</Typography>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+        }}
+      >
+        <Typography sx={{ mx: props.mx }} variant={'h5'}>
+          現在の
+        </Typography>
+        <LocaleForm setLocale={setLocale} />
+        <Typography sx={{ mx: props.mx }} variant={'h5'}>
+          の時刻は
+        </Typography>
+      </Box>
       <Typography variant={'h4'}>{clock}</Typography>
     </FlexibleBox>
   );
