@@ -12,7 +12,7 @@ export const WrapAppBar: React.FC<WrapAppBarProps> = ({ ...props }) => {
       <AppBar position='static'>
         <Toolbar>
           <Typography variant='h5' component='div' sx={{ flexGrow: 1 }}>
-            Utility
+            Clock
           </Typography>
         </Toolbar>
       </AppBar>

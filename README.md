@@ -6,7 +6,7 @@
 
 ## 立上げ
 
-- `next build && next start` で立ち上がります。
+- `yarn && next build && next start` で立ち上がります。
 
 ## 内容
 
