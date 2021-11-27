@@ -1,35 +1,33 @@
 ## 概要
 
-- React/TypeScript で、リアルタイムの時計表示を行うアプリケーション
+- React/TypeScript で、リアルタイムの時計表示を行うアプリケーションです
+
+- 加えてオプションで、ユーザー情報をランダムで生成してくれる外部APIにリクエストする機能があります
 
 ## 内容
 
-- リアルタイムでカウントされる時計を表示する
+- 現在時刻の表示
 
-- 外部APIを叩いてデータを取得する
+  - 選択したロケールによって、表示される時刻が変わります
 
-## 使用（予定）技術
+- 外部APIを叩いてランダム生成されたユーザ―情報を表示
 
-- dependencies
-  
-  - TypeScript
+## 使用技術
 
-  - React
+- TypeScript
 
-  - Next.js
+- React
 
-  - Material UI (v5)
+- Next.js
 
-  - Axios (or Fetch API)
-  
-- devDependencies
+- Material UI (v5)
 
-  - storybook
+- React-Select
 
-  - hygen
+- useSWR
 
-  - eslint
+- hygen
 
-  - prettier
+- eslint
 
-　- jest
+- prettier
