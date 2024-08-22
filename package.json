@@ -12,8 +12,8 @@
     "hygen": "hygen"
   },
   "dependencies": {
-    "@emotion/react": "11.6.0",
-    "@emotion/styled": "11.6.0",
+    "@emotion/react": "11.13.3",
+    "@emotion/styled": "11.13.0",
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.1.1",
     "@mui/styles": "^5.1.1",
