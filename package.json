@@ -28,7 +28,7 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
+    "@babel/core": "7.25.9",
     "@types/react": "17.0.35",
     "babel-loader": "8.2.3",
     "babel-plugin-polyfill-corejs2": "^0.3.0",
