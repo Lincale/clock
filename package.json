@@ -32,7 +32,7 @@
     "@types/react": "17.0.35",
     "babel-loader": "8.2.3",
     "babel-plugin-polyfill-corejs2": "^0.3.0",
-    "babel-plugin-polyfill-regenerator": "^0.3.0",
+    "babel-plugin-polyfill-regenerator": "^0.6.0",
     "better-typescript-lib": "^2.0.0",
     "eslint": "<8.0.0",
     "eslint-config-next": "12.0.4",
